@@ -4,7 +4,7 @@ files:
   - source: /aws-test.py
     destination: /home/ec2-user/
 hooks:
-  AfterInstall:
+  BeforeInstall:
     - location: /install_dependencies.sh
       timeout: 300
       runas: root
